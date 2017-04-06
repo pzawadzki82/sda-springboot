@@ -27,7 +27,7 @@ import static org.junit.Assert.assertTrue;
  * Created by zawadzki on 2017-04-06.
  */
 
-@ContextConfiguration(loader=AnnotationConfigContextLoader.class, classes = {DeptDAOTest.class})
+@ContextConfiguration(loader=AnnotationConfigContextLoader.class, classes = {DeptDAOTest.TestConfig.class})
 @RunWith(SpringRunner.class)
 public class DeptDAOTest {
 
