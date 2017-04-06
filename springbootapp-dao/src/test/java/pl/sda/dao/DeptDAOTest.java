@@ -20,8 +20,6 @@ import javax.sql.DataSource;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
-
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
@@ -29,7 +27,7 @@ import static org.junit.Assert.assertTrue;
  * Created by zawadzki on 2017-04-06.
  */
 
-@ContextConfiguration(loader=AnnotationConfigContextLoader.class)
+@ContextConfiguration(loader=AnnotationConfigContextLoader.class, classes = {DeptDAOTest.class})
 @RunWith(SpringRunner.class)
 public class DeptDAOTest {
 
