@@ -10,6 +10,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>springbootapp-integration-tests</artifactId>
+    <name>springbootapp-integration-tests</name>
+    <description>SpringBoot Tests</description>
 
     <dependencies>
         <dependency>
@@ -45,4 +47,13 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <build>
+        <testResources>
+            <testResource>
+                <directory>src/test/resources</directory>
+                <filtering>true</filtering>
+            </testResource>
+        </testResources>
+    </build>
 </project>

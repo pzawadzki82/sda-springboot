@@ -1,12 +1,12 @@
 # Application Info
 info:
-  name: springbootapp-service
-  description: SpringBoot Demo
-  version: 1.0-SNAPSHOT
+  name: ${project.name}
+  description: ${project.description}
+  version: ${project.version}
 
 server:
   port: 8080
-  context-path: /springbootapp-service
+  context-path: /${project.name}
 
 spring:
   datasource:
@@ -27,6 +27,9 @@ spring:
         hbm2ddl.auto: update
         hibernate.show_sql: true
         hibernate.format_sql: true
+
+client:
+  url: http://localhost:8080/${project.name}
 
 logging:
   level:

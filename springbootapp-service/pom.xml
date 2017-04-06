@@ -11,7 +11,7 @@
 
     <artifactId>springbootapp-service</artifactId>
     <name>springbootapp-service</name>
-    <description>SpringBoot </description>
+    <description>SpringBoot Demo</description>
 
     <dependencies>
         <dependency>
