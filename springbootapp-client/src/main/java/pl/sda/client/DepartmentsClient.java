@@ -23,9 +23,6 @@ public class DepartmentsClient {
         UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(url+"/departments/queries/byDname")
                 .queryParam("dname", dname);
 
-        Map<String, String> params = new HashMap<String, String>();
-        params.put("id", "1");
-
         Department[] departments = restTemplate.getForObject(builder.build().encode().toUri(), Department[].class);
 
         return Arrays.asList(departments);
